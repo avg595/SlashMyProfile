@@ -1,0 +1,11 @@
+@import "src/sass/global-variables";
+
+.mat-toolbar {
+    background: $primary;
+
+    .title-container {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+}
