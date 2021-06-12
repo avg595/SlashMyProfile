@@ -1,5 +1,9 @@
 @import "./global-variables";
 
+body {
+    background-color: #e5e5e5;
+}
+
 button { 
     background-color: $primary!important;
 }

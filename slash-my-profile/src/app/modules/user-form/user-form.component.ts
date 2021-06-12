@@ -16,12 +16,16 @@ export class UserFormComponent implements OnInit {
     description: [""],
   });
 
+  user = [];
+
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
   }
 
   saveUser() {
-    console.log(this.userForm.valid)
+    if (this.userForm.valid) {
+      this.user = this.userForm.value;
+    }
   }
 }
