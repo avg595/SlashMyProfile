@@ -10,6 +10,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
 
 import { CardModule } from 'primeng/card';
+import { ProfileComponent } from './components/profile/profile.component';
 
 const materialModules = [
   MatToolbarModule,
@@ -23,7 +24,9 @@ const primeNgModules = [
 ]
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ProfileComponent
+  ],
   imports: [
     CommonModule,
     FontAwesomeModule,
@@ -37,6 +40,7 @@ const primeNgModules = [
     FontAwesomeModule,
     FormsModule,
     ReactiveFormsModule,
+    ProfileComponent,
     ...materialModules,
     ...primeNgModules
   ]

@@ -1,0 +1,11 @@
+<div class="profile-container">
+    <img [src]="imagePath" alt="profile"
+        [ngClass]="!isImgSelected ? 'cursor-pointer' : ''"
+        (click)="!isImgSelected ? fileUpload.click() : null">
+    <input #fileUpload type="file" name="file" id="file" (change)="onFileChanged($event);" />
+    <span *ngIf="isImgSelected" 
+        [ngClass]="isImgSelected ? 'cursor-pointer' : ''"
+        (click)="isImgSelected ? fileUpload.click() : null">
+        <fa-icon [icon]="faPencilAlt"></fa-icon>
+    </span>
+</div>

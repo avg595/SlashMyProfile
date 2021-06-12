@@ -1,0 +1,39 @@
+@import "src/sass/global-variables";
+
+.profile-container {
+    display: inline-block;
+    position: relative;
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    img {
+        border-radius: 50%;
+        height: 10rem;
+    }
+
+    input {
+        display: none;
+    }
+    
+    span {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 10%;
+        left: 100%;
+        width: 50%;
+        height: 10%;
+        margin: -8% 0 0 -42%;
+        border-radius: 1px;
+
+        fa-icon {
+            display: inline-block;
+            border-radius: 60px;
+            background-color: $primary;
+            color: #fff;
+            padding: 0.5em 0.6em;
+        }
+    }
+}
